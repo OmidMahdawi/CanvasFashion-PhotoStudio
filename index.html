@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Photo Studio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/login.css">
+    <link rel="stylesheet" href="Styles/shared.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="Scripts/index.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand logo" href="index.html">Canvas</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog.html">Brand Photography</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Cloth Design</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Fashion Photography</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Collaboration
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="shop-now.html">Products</a></li>
+                          <li><a class="dropdown-item" href="contact-us.html">Call Center</a></li>
+                          <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#story">about</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="login"><a id="login">Login</a></div>
+                        <button class="btn btn-outline-success" type="submit"> <div class="circle__shape"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                          </svg>
+                          </div>Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        
+        <div id="backdrop"></div>
+        <aside class="model" id="config-overlay">
+          <h2>Login to your account</h2>
+          <form>
+              <div class="form-control">
+                  <input type="text" name="name" id="name" placeholder="Your Name">
+                  <input type="password" name="name" id="playername" placeholder="Password">
+              </div>
+              <p id="config-error"></p>
+              <div id="pair__buttons">
+                  <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+                  <button type="submit" class="btn">Login</button>
+              </div>
+          </form>
+      </aside>
+
+        <main>
+            <section class="main__hero">
+                <div class="content">
+                  <h1 class="gradient-text">Canvas</h1>
+                  <p>At Canvas We Believe That Fashion Is More Than Just Clothing!</p>
+                </div>
+                <img src="Assets/Images/main__hero_img1.jpg" alt="stylist with a hat">
+            </section>
+            <section class="main__hero img-bg">
+              <img src="Assets/Images/main__hero__img2.jpg" alt="">
+              <img src="Assets/Images/main__hero__img3.jpg" alt="">
+            </section>
+            <section class="our__story">
+              <div class="header">
+              <p class="our__story__text" id="story">Our Story</p>
+              <h2 class="capitalize gredient-text">canvas studio was born out of a passion for staying ahead of the fashion curve. we understand that the clothes you wear reflect your personality and aspiration.
+              </h2>
+              </div>
+                
+              <p class="capitalize description">at canvas studio, we believe that fashion is more than just clothing; it's a form of self-expression. A canvas where your unique style takes center stage. step into a world where innovation meets trendsetting. and discover a curated collection that redefines contemporary fashion.</p>
+              <div class="story__footer">
+                <div class="story__footer__content">
+                  <h3 class="uppercase white">Year</h3>
+                  <p>2023-2024</p>
+                </div>
+                <div class="story__footer__content">
+                  <h3 class="uppercase white">Address</h3>
+                  <p>United States, New York</p>
+                  <p>South Korea, Seoul</p>
+                </div>
+                <div class="story__footer__content">
+                  <h3 class="uppercase white">The crew</h3>
+                  <p>Design - Choco</p>
+                  <p>E&D - Neri Kwank</p>
+                </div>
+                <div class="story__footer__content">
+                  <h3 class="uppercase white">overview</h3>
+                  <p>Design, E&D, &</p>
+                  <p>Production</p>
+                </div>
+              </div>
+            </section>
+            <section class="models">
+              <div class="wrapper one">
+                <div class="visual">
+                  <div class="image"></div>
+                  <h3>Casual Chic</h3>
+                </div>
+                <div class="info__text">
+                  <p class="capitalize">elevate your everyday look with our casual chic collection. From comfortable loungewear to stylish streetwear, we've fot your casual style needs covered.</p>
+                </div>
+              </div>
+
+              <div class="wrapper two row__reverse">
+                <div class="visual">
+                  <div class="image"></div>
+                  <h3>Statement Pieces</h3>
+                </div>
+                <div class="info__text">
+                  <p class="capitalize">make header turn with our statement pieces that are designed to leave a lasting impression. These bold and unique items are perfect for those who dare to stand out.</p>
+                </div>
+              </div>
+
+              <div class="wrapper three">
+                <div class="visual">
+                  <div class="image"></div>
+                  <h3>Casual Chic</h3>
+                </div>
+                <div class="info__text">
+                  <p class="capitalize">elevate your everyday look with our casual chic collection. From comfortable loungewear to stylish streetwear, we've fot your casual style needs covered.</p>
+                </div>
+              </div>
+            </section>
+            <section class="blog">
+              <div class="blog__header">
+                <div class="header__tag">
+                  <h2 class="capitalize">Stay inspired with our blog</h2>
+                </div>
+                <p class="capitalize">looking for fashion tips, style guides, and the latest trends? Explore our blog for insightful articles that keep you informed and inspired. from fashion-forward looks behind-The-Scenes stories. our blog is our Go-To- Source for all things trendy.</p>
+              </div>
+              <div class="blog__main__container">
+                <div class="label__info">
+                  <h4>Product</h4>
+                  <h4>Canvas Studio Lunches Exclusive<br> Spring Collection</h4>
+                  <h4>11 Jan 2024</h4>
+                  <div class="visit__blog"> <a href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                  </svg></a>
+                  </div>
+                </div>
+                <div class="img__container">
+                  <div class="img__model model__one"></div>
+                  <div class="img__model__landscape model__one__landscape"></div>
+                </div>
+              </div>
+
+              <div class="blog__main__container">
+                <div class="label__info">
+                  <h4>Sustainable</h4>
+                  <h4>Sustainable Fashion Takes <br> Center Stage</h4>
+                  <h4>25 Dec 2023</h4>
+                  <div class="visit__blog"> <a href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                  </svg></a>
+                  </div>
+                </div>
+                <div class="img__container">
+                  <div class="img__model model__two"></div>
+                  <div class="img__model__landscape model__two__landscape"></div>
+                </div>
+              </div>
+
+              <div class="blog__main__container">
+                <div class="label__info">
+                  <h4>Fashion Week</h4>
+                  <h4>Fashion Week Extravaganza:<br> Canvas Studio Steals The Show</h4>
+                  <h4>15 Sept 2023</h4>
+                  <div class="visit__blog"> <a href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                  </svg></a>
+                  </div>
+                </div>
+                <div class="img__container">
+                  <div class="img__model model__three"></div>
+                  <div class="img__model__landscape model__three__landscape"></div>
+                </div>
+              </div>
+            </section>
+            <section class="discover">
+              <div class="discover__more">
+                <h2 class="capitalize">Discover Trendsetting Fashion <br class="big__visible"> At Canvas Studio</h2>
+                <p class="capitalize">Stop Now To Redefine your style elevate your wardrobe with exclusive pieces seize the trends. "own your style!"</p>
+                <div class="d-flex center">
+                  <a class="block white" href="shop-now.html"><button class="btn btn-outline-success white" type="submit"> <div class="circle__shape"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                    </svg>
+                    </div>Shop Now</button></a>
+              </div>
+              </div>
+            </section>
+        </main>
+
+        <footer>
+          <div class="footer__wrapper__content">
+            <div class="message">
+              <h3><a href="index.html">Canvas</a></h3>
+              <p class="capitalize">step into a world where innovation meets trendsetting, and discover a curated collection that redefines contemporary fashion.</p>
+            </div>
+            <div class="footer__final__nav">
+              <div class="footer__nav__items">
+                <h3 class="capitalize">about us</h3>
+                <p class="capitalize"><a href="index.html #story">about us</a></p>
+                <p class="capitalize"><a href="#">careers</a></p>
+                <p class="capitalize"><a href="#">feature plan</a></p>
+              </div>
+
+              <div class="footer__nav__items">
+                <h3 class="capitalize">help</h3>
+                <p class="capitalize"><a href="contact-us.html">call center</a></p>
+                <p class="capitalize"><a href="#">FAQ</a></p>
+                <p class="capitalize"><a href="blog.html">blog</a></p>
+              </div>
+
+              <div class="footer__nav__items">
+                <h3 class="capitalize">product</h3>
+                <p class="capitalize"><a href="#">sustainable</a></p>
+                <p class="capitalize"><a href="#">summer</a></p>
+                <p class="capitalize"><a href="#">collaboration</a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+</body>
+</html>

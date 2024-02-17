@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/shared.css">
+    <link rel="stylesheet" href="Styles/Help/blog.css">
+    <script src="Scripts/index.js" defer></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand logo" href="index.html">Canvas</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="blog.html">Brand Photography</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Cloth Design</a></li>
+                          <li><a class="dropdown-item" href="blog.html">Fashion Photography</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Collaboration
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="shop-now.html">Products</a></li>
+                          <li><a class="dropdown-item" href="contact-us.html">Call Center</a></li>
+                          <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#story">about</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="login"><a id="login">Login</a></div>
+                        <button class="btn btn-outline-success" type="submit"> <div class="circle__shape"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                          </svg>
+                          </div>Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <div id="backdrop"></div>
+        <aside class="model" id="config-overlay">
+          <h2>Login to your account</h2>
+          <form>
+              <div class="form-control">
+                  <input type="text" name="name" id="name" placeholder="Your Name">
+                  <input type="password" name="name" id="playername" placeholder="Password">
+              </div>
+              <p id="config-error"></p>
+              <div id="pair__buttons">
+                  <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+                  <button type="submit" class="btn">Login</button>
+              </div>
+          </form>
+        </aside>
+
+          <main>
+            <div class="content__bg__img">
+                <h3 class="background__colored capitalize">design & designers</h3>
+                <h2 class="capitalize post__title">Here from our designers!</h2>
+                <div class="time__author">
+                    <div class="time flex white">
+                        <svg class="white__background" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg> 
+                          <p class="white">5 min read</p>
+                    </div>
+                    <div class="author flex">
+                        <p class="white">James Frank</p> 
+                        <div class="profile profile__one"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter">
+                <h3 id="filter__down"> <svg class="arrow__up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+                  Filter <svg class="background__none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                  </svg>
+                  </h3>
+
+                  <h3 id="filter__up"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                  </svg>
+                  Filter <svg class="background__none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                  </svg>
+                  </h3>
+                <div class="filter__content">
+                    <h3>All</h3>
+                    <h3>Design & Designer</h3>
+                    <h3>Products</h3>
+                    <h3>Trends</h3>
+                    <h3>Fashion Photography</h3>
+                    <h3>Brand Photography</h3>
+                    <h3>New Collections</h3>
+                </div>
+            </div>
+
+            <h1 class="welcome">Welcome to the Canvas Blog!</h1>
+
+            <div class="triple__collumns__wrapper grid">
+              <div class="even__columns">
+                <div class="even__cullumns__wrapper flex">
+                    <div class="card__wrapper">
+                        <div class="card__img img__one"></div>
+                        <div class="card__content">
+                            <h3 class="background__colored capitalize white">design & designers</h3>
+                            <h2 class="capitalize post__title">hear from our designers!</h2>
+                            <div class="time__author flex">
+                                <div class="time">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                      </svg>
+                                      <p>5 min read</p>
+                                </div>
+                                <div class="author flex">
+                                    <p>name</p> 
+                                    <div class="profile profile__one"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__wrapper">
+                        <div class="card__img img__two"></div>
+                        <div class="card__content">
+                            <h3 class="background__colored capitalize white">Fashion & Fashion Photography</h3>
+                            <h2 class="capitalize post__title">What makes you look better?</h2>
+                            <div class="time__author flex">
+                                <div class="time">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                      </svg>
+                                      <p>7 min read</p>
+                                </div>
+                                <div class="author flex">
+                                    <p>Ashly Warm</p> 
+                                    <div class="profile profile__two"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="even__cullumns__wrapper flex">
+                  <div class="card__wrapper">
+                      <div class="card__img img__three"></div>
+                      <div class="card__content">
+                          <h3 class="background__colored capitalize white">Fast Fashion</h3>
+                          <h2 class="capitalize post__title">Color of the year!</h2>
+                          <div class="time__author flex">
+                              <div class="time">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                    <p>8 min read</p>
+                              </div>
+                              <div class="author flex">
+                                  <p>Pablo chwartsmuler</p> 
+                                  <div class="profile profile__three"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="card__wrapper">
+                      <div class="card__img img__four"></div>
+                      <div class="card__content">
+                          <h3 class="background__colored capitalize white">Fashion & Fashion Photography</h3>
+                          <h2 class="capitalize post__title">the complete guide on choosing colors!</h2>
+                          <div class="time__author flex">
+                              <div class="time">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                    <p>8 min read</p>
+                              </div>
+                              <div class="author flex">
+                                  <p>Diana Donta</p> 
+                                  <div class="profile profile__four"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="even__cullumns__wrapper flex">
+                  <div class="card__wrapper">
+                      <div class="card__img img__five"></div>
+                      <div class="card__content">
+                          <h3 class="background__colored capitalize white">Fashion & Style</h3>
+                          <h2 class="capitalize post__title">Your summer recipe is here!</h2>
+                          <div class="time__author flex">
+                              <div class="time">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                    <p>5 min read</p>
+                              </div>
+                              <div class="author flex">
+                                  <p>Rana Seller</p> 
+                                  <div class="profile profile__five"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="card__wrapper">
+                      <div class="card__img img__six"></div>
+                      <div class="card__content">
+                          <h3 class="background__colored capitalize white">Brand & Brand Photography</h3>
+                          <h2 class="capitalize post__title">What you know about it?</h2>
+                          <div class="time__author flex">
+                              <div class="time">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                    <p>6 min read</p>
+                              </div>
+                              <div class="author flex">
+                                  <p>Diana Danta</p> 
+                                  <div class="profile profile__six"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="show show__more">
+                  <h3 class="show__more__btn">Show More<svg class="arrow__up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg></h3>
+                </div>
+                <div class="hiden__content none">
+                    <div class="even__cullumns__wrapper flex ">
+                        <div class="card__wrapper">
+                            <div class="card__img img__seven"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">brand & brand Photography</h3>
+                                <h2 class="capitalize post__title">The newest product. Order now!</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>4 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Sara Suadun</p> 
+                                        <div class="profile profile__seven"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="card__wrapper">
+                            <div class="card__img img__eight"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">Fashion & Fashion Photography</h3>
+                                <h2 class="capitalize post__title">Why it matters to be gentle?</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>8 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Jacika Fernandiz</p> 
+                                        <div class="profile profile__eight"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+      
+                      <div class="even__cullumns__wrapper flex">
+                        <div class="card__wrapper">
+                            <div class="card__img img__nine"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">Fashion & Fashion Photography</h3>
+                                <h2 class="capitalize post__title">Canvas lunches a style show!</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>10 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Bob Jeferson</p> 
+                                        <div class="profile profile__nine"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="card__wrapper">
+                            <div class="card__img img__ten"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">Fashion & Fashion Photography</h3>
+                                <h2 class="capitalize post__title">what you think about new trends?</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>5 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Lonardu Fine</p> 
+                                        <div class="profile profile__ten"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+      
+                      <div class="even__cullumns__wrapper flex">
+                        <div class="card__wrapper">
+                            <div class="card__img img__eleven"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">design & designers</h3>
+                                <h2 class="capitalize post__title">of importance about your clothing!</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>7 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Lora Simma</p> 
+                                        <div class="profile profile__eleven"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="card__wrapper">
+                            <div class="card__img img__twelve"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">fashion & fashion Photography</h3>
+                                <h2 class="capitalize post__title">Our summer collection master piece!</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>8 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Steven Park</p> 
+                                        <div class="profile profile__twelve"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+      
+                      <div class="even__cullumns__wrapper flex">
+                        <div class="card__wrapper">
+                            <div class="card__img img__thirten"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">design & designers</h3>
+                                <h2 class="capitalize post__title">what are the magics in our work?</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>9 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Sophia Tomson</p>
+                                        <div class="profile profile__thirten"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="card__wrapper">
+                            <div class="card__img img__forten"></div>
+                            <div class="card__content">
+                                <h3 class="background__colored capitalize white">Product & product Photography</h3>
+                                <h2 class="capitalize post__title">What are new for this season?</h2>
+                                <div class="time__author flex">
+                                    <div class="time">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                          </svg>
+                                          <p>6 min read</p>
+                                    </div>
+                                    <div class="author flex">
+                                        <p>Diana Danta</p> 
+                                        <div class="profile profile__forten"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="show show__less none">
+                    <h3 class="show__less__btn">Show Less <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+                    </svg></h3>
+                </div>
+             </div>
+             <div class="side__wrapper">
+                <div class="subscribe">
+                    <div class="top">
+                        <div class="mail__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                              </svg>                              
+                        </div>
+                        <div class="sub__header">
+                            <h2 class="white capitalize">The Holy Grail of Fast Fashion & Product Photography</h2>
+                        </div>
+                    </div>
+                    <p class="capitalize">Get the latest ideas, news, posts, and insights about new trends, fashion, products, and advice by subscribing to our weekly newsletter!</p>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe</button>
+                </div>
+                <h3 class="loved__posts__text">Most <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                  </svg> Post
+                  </h3>
+                  <div class="loved__posts__wrapper">
+                    <div class="post__gap">
+                        <div class="post">
+                            <div class="img"></div>
+                            <div class="header__title">
+                                <h3 class="capitalize">The newest product. Order now!</h3>
+                            </div>
+                        </div>
+    
+                        <div class="post">
+                            <div class="img loved__img2"></div>
+                            <div class="header__title">
+                                <h3 class="capitalize">What are the magics in our work?</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__gap">
+                        <div class="post">
+                            <div class="img loved__img3"></div>
+                            <div class="header__title">
+                                <h3 class="capitalize">What you think about the new trends?</h3>
+                            </div>
+                        </div>
+    
+                        <div class="post">
+                            <div class="img loved__img4"></div>
+                            <div class="header__title">
+                                <h3 class="capitalize">of importance about your clothing!</h3>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+             </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer__wrapper__content">
+            <div class="message">
+                <h3><a href="index.html">Canvas</a></h3>
+                <p class="capitalize">step into a world where innovation meets trendsetting, and discover a curated collection that redefines contemporary fashion.</p>
+            </div>
+            <div class="footer__final__nav">
+                <div class="footer__nav__items">
+                <h3 class="capitalize">about us</h3>
+                <p class="capitalize"><a href="#story">about us</a></p>
+                <p class="capitalize"><a href="#">careers</a></p>
+                <p class="capitalize"><a href="#">feature plan</a></p>
+                </div>
+
+                <div class="footer__nav__items">
+                <h3 class="capitalize">help</h3>
+                <p class="capitalize"><a href="contact-us.html">call center</a></p>
+                <p class="capitalize"><a href="#">FAQ</a></p>
+                <p class="capitalize"><a href="blog.html">blog</a></p>
+                </div>
+
+                <div class="footer__nav__items">
+                <h3 class="capitalize">product</h3>
+                <p class="capitalize"><a href="#">sustainable</a></p>
+                <p class="capitalize"><a href="#">summer</a></p>
+                <p class="capitalize"><a href="#">collaboration</a></p>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  h1, h2, h3, h4, h5, a, p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+ 
+.capitalize {
+    text-transform: capitalize;
+}
+
+.white {
+    color: white;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(52, 49, 49);
+}
+
+
+
+.wrapper {
+    width: 100%;
+    max-width: 69.375rem;
+    margin-inline: auto;
+}
+
+
+nav.navbar {
+    max-width: 69.375rem;
+    margin-inline: auto;
+    background-color: white !important;
+}
+
+@media (min-width: 60rem) {
+    .collapse {
+        padding-inline-start: 18rem;
+    }
+}
+
+.logo {
+    font-family: "Satisfy" !important;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-image: linear-gradient(
+              45deg,
+              #CA4246 16.666%, 
+              #E16541 16.666%, 
+              #E16541 33.333%, 
+              #F18F43 33.333%, 
+              #F18F43 50%, 
+              #8B9862 50%, 
+              #8B9862 66.666%, 
+              #476098 66.666%, 
+              #476098 83.333%, 
+              #A7489B 83.333%);
+              -webkit-text-fill-color: transparent; 
+              -webkit-background-clip: text;
+}
+
+li a{
+    color: rgb(58, 56, 56) !important;
+    font-weight: bold !important;
+}
+
+.login {
+    margin-inline-end: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.login #login {
+    text-decoration: none;
+    color: rgb(58, 56, 56) !important;
+    font-weight: bold;
+}
+
+.model {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.model #name {
+  display: block;
+  margin-block-end: 1rem;
+}
+
+#pair__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-block-start: 1rem;
+}
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 11;
+    display: none;
+
+}
+
+@media (min-width: 48rem) {
+    .model {
+        left: calc(50% - 20rem);
+        width: 40rem;
+    }
+}
+
+form button {
+    /*padding: 1rem 2rem !important;
+    */display: flex !important;
+    align-items: center;
+    border-radius: 100vw !important;
+    border-color: rgb(216, 216, 216) !important;
+    color: rgb(58, 56, 56) !important;
+    font-weight: bold !important;
+    -webkit-border-radius: 100vw !important;
+    -moz-border-radius: 100vw !important;
+    -ms-border-radius: 100vw !important;
+    -o-border-radius: 100vw !important;
+}
+
+button .circle__shape {
+    display: inline-block;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-inline-end: 1rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+button:hover {
+    background: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%) !important;
+}
+
+.circle__shape svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    width: 1rem;
+    height: 1rem;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+}
+
+
+/* FOOTER */
+
+.footer__wrapper__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.footer__wrapper__content h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-block-end: 1rem;
+  color: rgb(46, 44, 44);
+}
+
+.footer__wrapper__content p {
+  font-size: .85rem;
+  color: rgb(72, 71, 71);
+}
+.message {
+  margin-block-end: 2rem;
+}
+
+.footer__final__nav {
+  display: grid;
+  grid-template-columns: 1 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 30rem) {
+  .footer__wrapper__content {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+  }
+
+  .message {
+      flex: 0 1 30%;
+  }
+
+  .footer__final__nav {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      gap: 4rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .footer__wrapper__content {
+      padding: 5rem 4rem;
+      padding-block-end: 3rem;
+  }
+}
